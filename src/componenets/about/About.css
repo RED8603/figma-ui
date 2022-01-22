@@ -1,0 +1,26 @@
+.about {
+  width: 100%;
+  height: 536px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  color: white !important;
+}
+
+.about__left {
+  flex: 6;
+}
+.about__right {
+  flex: 5;
+}
+
+.flex {
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+}
+.pad {
+  padding: 5px;
+  margin: 5px;
+}

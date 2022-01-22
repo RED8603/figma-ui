@@ -1,0 +1,80 @@
+.roadmap {
+  width: 100%;
+  background: #0a000c;
+  min-height: 800px;
+  color: white !important;
+}
+
+.roadmap__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin: 40px;
+  padding: 50px;
+
+  color: #ffffff;
+}
+.roadmap__middleText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-left: 100px;
+  padding: 20;
+
+  color: #ffffff;
+}
+.roadmap__smallText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #aaaaaa;
+  margin-left: 20px;
+}
+.Roadmap__flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.roadmap__image {
+  width: 100%;
+  height: 450px;
+}
+
+.sliderBottom {
+  width: 100%;
+  height: 10px;
+}
+.barOne {
+  background: #ad00ff;
+}
+.barTwo {
+  background: #7500ac;
+}
+.star {
+  margin: 0 100px;
+  width: 19.36px;
+  height: 19.36px;
+  background: #929292 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.swiper-button-prev {
+  color: linear-gradient(to bottom left, #0066ff 0%, #990099 100%) !important;
+}
+.swiper-button-prev:hover {
+  color: #990099 !important;
+}
+
+.swiper-button-next {
+  color: linear-gradient(to bottom left, #0066ff 0%, #990099 100%) !important;
+}
+.swiper-button-next:hover {
+  color: #990099 !important;
+}

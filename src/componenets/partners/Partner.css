@@ -1,0 +1,33 @@
+.partner {
+  background: #0a000c;
+  color: white !important;
+}
+.partner__Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.partner__imageContaonr {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  min-height: 287px;
+  background: #110713;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.partner__img {
+  margin: 20px;
+  padding: 20px;
+}
+
+.partner__title {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 48px;
+  line-height: 56px;
+}

@@ -1,0 +1,31 @@
+.navbar {
+  color: white !important;
+  background: #16002c !important;
+}
+
+/* drop down  */
+
+.button__imageWrapper {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 186px;
+  height: 46px;
+  cursor: pointer;
+  clip-path: polygon(17% 0, 95% 0, 100% 20%, 83% 100%, 5% 100%, 0 80%);
+
+  background: radial-gradient(
+    241.67% 3206.67% at -4.58% -26.67%,
+    #ad00ff 8.51%,
+    #0029ff 100%
+  );
+}
+
+.button__text {
+  font-family: Nova Flat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: white !important;
+}

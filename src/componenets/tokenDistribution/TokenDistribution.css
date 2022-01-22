@@ -1,0 +1,66 @@
+.tokenDistribution {
+  background: #0a000c !important;
+  color: white !important;
+
+  width: 100%;
+}
+
+.tokenDistribution__pieTitleText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 48px;
+  line-height: 137.19%;
+}
+.custom__bullet {
+  width: 18px;
+  height: 18px;
+  background: #8000ff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.custom__bulletText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  width: 100%;
+  color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+}
+ul {
+  list-style: none;
+}
+.mostRightTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 30.6562px;
+  line-height: 100.19%;
+  /* identical to box height, or 42px */
+
+  color: #ffffff;
+  margin: 50px;
+  padding: 50px;
+  border-bottom: 1px solid white;
+}
+
+.textWrapper__mostRight {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30.6562px;
+  line-height: 42px;
+  color: #ffffff;
+}
+.textColor {
+  color: #8000ff !important;
+}

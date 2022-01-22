@@ -1,0 +1,181 @@
+.upcomingProjects {
+  background: #0a000c;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upcomingProjects__actions {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+
+  color: white !important;
+}
+.upcomingProjects__actionsViewmore {
+  display: flex;
+  align-items: center;
+}
+.upcomingProjects__actionsViewmoreTexT {
+  background: -webkit-linear-gradient(
+    rgba(173, 21, 244, 1),
+    rgba(0, 148, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.upcomingProjects__cards {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.upcomingProjects__card {
+  min-width: 523px;
+  color: white !important;
+  max-height: 488px;
+  margin: 0 50px;
+  border-radius: 14px !important;
+  background: #110713 !important;
+  box-shadow: 0px 4px 15px rgba(173, 21, 244, 0.1);
+}
+.upcomingProjects__card:hover {
+  background: #2c1231 !important;
+  box-shadow: 0px 4px 15px rgba(183, 50, 245, 0.1);
+}
+.card__image {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.upcomingProjects__cardContents {
+  display: flex !important;
+  align-items: center;
+}
+.flex {
+  padding: 5px;
+  margin: 5px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+/* custom button */
+
+.custom-btn {
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+/* 3 */
+.btn-3 {
+  background: #42006e;
+  box-shadow: 0 0 5px #42006e, 0 0 8px #42006e;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  z-index: 2;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.btn-3:hover {
+  background-color: transparent;
+  color: #42006e;
+  box-shadow: 0 5px 3px -3px #42006e, 0 -5px 3px -3px #42006e,
+    0 5px 3px -3px #42006e, 0 -5px 3px -3px #42006e;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 50%;
+  right: 0;
+  z-index: -1;
+  background: #42006e;
+  box-shadow: 0 0 5px #42006e;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  top: 0;
+}
+.btn-3:after {
+  bottom: 0;
+}
+.btn-3:hover:before,
+.btn-3:hover:after {
+  height: 0;
+  background-color: #42006e;
+}
+
+/* 7 */
+.btn-7 {
+  color: #42006e;
+  line-height: 40px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #42006e;
+  box-shadow: 0 0 5px #42006e;
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 50%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 20%;
+  height: 2px;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #42006e;
+  box-shadow: 0 0 5px #42006e;
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 50%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 20%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
