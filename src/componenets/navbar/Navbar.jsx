@@ -80,129 +80,127 @@ function Navbar() {
 
         {/* size check */}
 
-        {width <= 1350 ? (
-          <>
-            <Grid item sx={{ flexGrow: "1" }}></Grid>
+        <Grid item sx={{ flexGrow: "1" }}></Grid>
 
-            <Grid
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-              item
-              xs={2}
-            >
-              <IconButton
-                id="demo-positioned-button"
-                aria-controls={open ? "demo-positioned-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? "true" : undefined}
-                onClick={handleClick}
-                size="large">
-                <AiOutlineMenu color="white" />
-              </IconButton>
+        <Grid
+          className="Menue"
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          item
+          xs={2}
+        >
+          <IconButton
+            id="demo-positioned-button"
+            aria-controls={open ? "demo-positioned-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+            size="large"
+          >
+            <AiOutlineMenu color="white" />
+          </IconButton>
 
-              <Menu
-                id="demo-positioned-menu"
-                aria-labelledby="demo-positioned-button"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-              >
-                <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
-                  Home
-                </MenuItem>
-                <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
-                  DashBord
-                </MenuItem>
-                <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
-                  Servives
-                </MenuItem>
-                <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
-                  Projects
-                </MenuItem>
-                <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
-                  RoadMap
-                </MenuItem>
-                <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
-                  WitePapper
-                </MenuItem>
-              </Menu>
-            </Grid>
-          </>
-        ) : (
-          <>
-            <Grid
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexWrap: "wrap",
-              }}
-              item
-              xs={8}
+          <Menu
+            id="demo-positioned-menu"
+            aria-labelledby="demo-positioned-button"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+          >
+            <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
+              Home
+            </MenuItem>
+            <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
+              DashBord
+            </MenuItem>
+            <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
+              Servives
+            </MenuItem>
+            <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
+              Projects
+            </MenuItem>
+            <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
+              RoadMap
+            </MenuItem>
+            <MenuItem sx={{ listStyle: "none" }} onClick={handleClose}>
+              WitePapper
+            </MenuItem>
+          </Menu>
+        </Grid>
+
+        <Grid
+          className="navBar__line "
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+          item
+          xs={8}
+        >
+          <IconButton size="large">
+            <Typography color={"#AD15F4"} sx={styles.navLinks}>
+              Home
+            </Typography>
+          </IconButton>
+          <IconButton size="large">
+            <Typography color={"white"} sx={styles.navLinks}>
+              DashBord
+            </Typography>
+          </IconButton>
+          <IconButton size="large">
+            <Typography color={"white"} sx={styles.navLinks}>
+              Services
+            </Typography>
+          </IconButton>
+          <IconButton size="large">
+            <Typography color={"white"} sx={styles.navLinks}>
+              Projects
+            </Typography>
+          </IconButton>
+          <IconButton size="large">
+            <Typography color={"white"} sx={styles.navLinks}>
+              RoadMap
+            </Typography>
+          </IconButton>
+          <IconButton size="large">
+            <Typography color={"white"} sx={styles.navLinks}>
+              WhitePaper
+            </Typography>
+          </IconButton>
+        </Grid>
+        <Grid
+          className="buttonHide"
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          item
+          xs={2}
+        >
+          <IconButton size="large">
+            <span
+              style={{ backgroundImage: `url(${b1})` }}
+              className="button__imageWrapper"
             >
-              <IconButton size="large">
-                <Typography color={"#AD15F4"} sx={styles.navLinks}>
-                  Home
-                </Typography>
-              </IconButton>
-              <IconButton size="large">
-                <Typography color={"white"} sx={styles.navLinks}>
-                  DashBord
-                </Typography>
-              </IconButton>
-              <IconButton size="large">
-                <Typography color={"white"} sx={styles.navLinks}>
-                  Services
-                </Typography>
-              </IconButton>
-              <IconButton size="large">
-                <Typography color={"white"} sx={styles.navLinks}>
-                  Projects
-                </Typography>
-              </IconButton>
-              <IconButton size="large">
-                <Typography color={"white"} sx={styles.navLinks}>
-                  RoadMap
-                </Typography>
-              </IconButton>
-              <IconButton size="large">
-                <Typography color={"white"} sx={styles.navLinks}>
-                  WhitePaper
-                </Typography>
-              </IconButton>
-            </Grid>
-            <Grid
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-              item
-              xs={2}
-            >
-              <IconButton size="large">
-                <span
-                  style={{ backgroundImage: `url(${b1})` }}
-                  className="button__imageWrapper"
-                >
-                  {" "}
-                  <p className="button__text">Connect</p>{" "}
-                </span>
-              </IconButton>{" "}
-            </Grid>
-          </>
-        )}
+              {" "}
+              <p className="button__text">Connect</p>{" "}
+            </span>
+          </IconButton>{" "}
+        </Grid>
       </Grid>
     </div>
   );

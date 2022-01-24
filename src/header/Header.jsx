@@ -13,6 +13,7 @@ function Header() {
       fontFamily: "Gemunu Libre",
       fontStyle: "normal",
       fontWeight: "bold",
+      maxWidth: " 579px",
 
       lineHeight: "94.7%",
       fontSize: {
@@ -30,6 +31,7 @@ function Header() {
         sm: "15px",
         xs: "10px",
       },
+      maxWidth: " 530px",
       marginTop: "20px",
       margin: "0 100px",
     },
@@ -41,12 +43,12 @@ function Header() {
         style={{ backgroundImage: `url(${bg})`, minHeight: "989" }}
       >
         <Grid container>
-          <Grid item xs={12} md={7}>
+          <Grid sx={{}} item xs={12} md={12}>
             <Typography className="header__title" sx={styles.logo}>
               METASTARTER Binance Crypto Exchange
             </Typography>
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={12}>
             <Typography className="header__paragraph" sx={styles.paragraph}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -63,7 +65,7 @@ function Header() {
             }}
             item
             xs={12}
-            md={7}
+            md={5}
           >
             <IconButton size="large">
               <span style={{}} className="button__imageWrapper">
@@ -83,12 +85,9 @@ function Header() {
           </Grid>
 
           <Grid
+            className="mdClass"
             sx={{
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              margin: "10px",
-              padding: "10px",
             }}
             item
             xs={12}
@@ -97,19 +96,28 @@ function Header() {
             <div className="smallbubble one">
               {" "}
               <p className="upperText"> Total Exchange </p>
-              <p className="lower__text"> $45,000,000 </p>
+              <p className="lower__text">
+                {" "}
+                <strong>$45,000,000</strong>{" "}
+              </p>
             </div>
 
-            <div className="bigbubble">
+            <div className="bigbubble two">
               {" "}
               <p className="upperText"> Total Exchange </p>
-              <p className="lower__text"> $45,000,000 </p>
+              <p className="lower__text">
+                {" "}
+                <strong>$45,000,000</strong>{" "}
+              </p>
             </div>
 
-            <div className="smallbubble two">
+            <div className="smallbubble three">
               {" "}
               <p className="upperText"> Total Exchange </p>
-              <p className="lower__text"> $45,000,000 </p>
+              <p className="lower__text">
+                {" "}
+                <strong>$45,000,000</strong>{" "}
+              </p>
             </div>
           </Grid>
         </Grid>

@@ -7,7 +7,7 @@ function Subscribe() {
       <div className="subscribe__container">
         <Grid sx={{ marginRight: "100px" }} xs={12} md={3}>
           <div className="subscribe__image">
-            <img src="s1.png" alt="" />
+            <img src="s1.png" className="sub__img" alt="" />
           </div>
         </Grid>
 

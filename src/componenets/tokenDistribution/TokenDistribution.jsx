@@ -36,9 +36,10 @@ function TokenDistribution() {
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
+            textAlign: "left",
           }}
           xs={12}
-          md={6}
+          md={7}
         >
           <p color="white" className="tokenDistribution__pieTitleText">
             {" "}
@@ -55,7 +56,7 @@ function TokenDistribution() {
             flexDirection: "column",
           }}
           xs={12}
-          md={5}
+          md={4}
         >
           <List>
             <ListItem

@@ -26,8 +26,12 @@ function AboutDetails() {
 
           <ul className="aboutDetails__list">
             <li className="aboutDetails__listItem">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              {" "}
+              <div className="flexDiv">
+                <span className="dot"></span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </div>
             </li>
             <li className="aboutDetails__listItem">
               Lorem Ipsum is simply dummy text of the printing and typesetting

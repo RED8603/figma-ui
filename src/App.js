@@ -1,5 +1,5 @@
 import { CssBaseline } from "@mui/material";
-import { useRef } from "react";
+
 import "./App.css";
 import About from "./componenets/about/About";
 import AboutDetails from "./componenets/aboutDetails/AboutDetails";

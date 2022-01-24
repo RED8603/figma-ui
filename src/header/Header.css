@@ -1,4 +1,4 @@
-.header__container {
+yar.header__container {
   min-height: 1029px;
   width: 100%;
   display: flex;
@@ -49,8 +49,23 @@
   border: 1px solid #0094ff;
 }
 .one {
-  left: 627px;
-  top: 697px;
+  /* position: absolute; */
+  z-index: 3;
+  left: 590px;
+  top: 597px;
+}
+.two {
+  /* position: absolute; */
+  z-index: 2;
+  left: 863px;
+  top: 805px;
+}
+.three {
+  /* position: absolute; */
+  left: 1130px;
+  top: 664px;
+
+  z-index: 1;
 }
 
 .bigbubble {
@@ -71,11 +86,28 @@
 
   border-radius: 36px;
 }
-.bigbubble {
+.bigbubble:hover {
   background: radial-gradient(
     305.26% 1064.75% at 9.15% 19.08%,
     #bb29ff 0%,
     #2da8ff 100%
   );
   border: 1px solid #0094ff;
+}
+
+@media (max-width: 767px) {
+  .smallbubble {
+    width: 160px;
+    height: 80px;
+  }
+  .bigbubble {
+    width: 190px;
+    height: 80px;
+  }
+  .upperText {
+    font-size: 20pxs;
+  }
+  .lower__text {
+    font-size: 20pxs;
+  }
 }
